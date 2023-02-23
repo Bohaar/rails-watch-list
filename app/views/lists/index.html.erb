@@ -1,0 +1,8 @@
+<div class='container'>
+  <h1>Lists</h1>
+    <ul class="list-group mb-3">
+        <% @lists.each do |list| %>
+           <li> <%= link_to list.name, list_path(list.id) %>
+          </li>
+        <% end %>
+</div>
